@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block title %}Punctuation Removed{% endblock %}
+{% block content %}
+    <div class="alert-danger">
+    <h1 class="p-3" >Your Punctutation {{purpose}} is Applied</h1>
+    </div>
+    <div class="alert-info">
+    <pre> {{analyzed_data}} </pre>
+    </div>
+{% endblock %}

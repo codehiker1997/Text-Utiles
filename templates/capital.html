@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block title %}Letters Capitalized{% endblock %}
+{% block content %}
+    <div class="alert-danger">
+    <h1 class="p-3" >Your Capitalization {{purpose}} is Applied</h1>
+    </div>
+    <div class="alert-info">
+    <pre class="m-2"> {{analyzed_data}} </pre>
+    </div>
+{% endblock %}

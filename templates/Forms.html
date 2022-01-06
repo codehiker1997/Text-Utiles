@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% block title %}Text Input{% endblock %}
+{% block content %}
+<form action="/analyze" class="form-group" method="get">
+    <label for="text">Enter Text Here</label>
+    <textarea class="form-control" name="text" id="" cols="30" rows="10"></textarea>
+    <div class="form-check form-switch">
+        <input name = 'punc' type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remove Puntuation</label>
+    </div>
+    <div class="form-check form-switch">
+        <input name = 'cap' type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Capitalized Letter</label>
+    </div>
+    <div class="form-check form-switch">
+        <input name = 'space' type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remove Space</label>
+    </div>
+    <div class="form-check form-switch">
+        <input name = 'count' type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Count Characters</label>
+    </div>
+    <div class="form-check form-switch">
+        <input name = 'newl' type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remove Newline</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Check Text</button>
+
+</form>
+{% endblock %}
